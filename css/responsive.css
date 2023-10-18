@@ -43,7 +43,19 @@
 }
 
 @media screen and (min-width: 600px){
-    
+    .article__body{
+        display: flex;
+            justify-content: space-around;
+            align-items: center;
+    }
+    .article__image{
+        width: 50%;
+        
+    }
+    .article__text{
+        width: 40%;
+       padding-right: 30px;
+    }
 }
 
 @media screen and (min-width: 768px){
