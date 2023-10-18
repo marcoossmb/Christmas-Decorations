@@ -11,6 +11,12 @@ body{
     min-width: 400px;
     max-width: 1440px;
 	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
 .favorites, .superior__img, .header__h1, .aside, .article__footer, .article__title, .article__data, .article__image{
@@ -45,7 +51,15 @@ body{
     margin-top: 50px;
     font-size: 11px;
     text-align: center;
+    grid-area: footer;
 }
 .footer__textcolor{
     color: red;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
 }
