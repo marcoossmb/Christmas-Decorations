@@ -162,5 +162,26 @@
 }
 
 @media screen and (min-width: 1200px ){
-    
+    .container{
+        grid-template-columns: 150px 300px 1fr;
+        grid-template-areas: 
+            "header aside main"
+            "header aside main"
+            "footer footer footer";
+    }
+    .header__h1, .superior__img{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: column;
+    }
+    .header, .nav, .article, .article__body{
+        background-color: #eeeeee;
+    }
+    .header{
+        align-items: start;
+    }
+    .nav__item{
+        margin-bottom: 10px;
+    }
 }
