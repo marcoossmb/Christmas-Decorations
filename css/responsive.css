@@ -45,8 +45,8 @@
 @media screen and (min-width: 600px){
     .article__body{
         display: flex;
-            justify-content: space-around;
-            align-items: center;
+        justify-content: space-around;
+        align-items: center;
     }
     .article__image{
         width: 50%;
@@ -59,7 +59,35 @@
 }
 
 @media screen and (min-width: 768px){
-    
+    .article__body{
+        display: block;
+    }
+    .article__text, .article__image{
+        width: 100%;
+    }
+    .article__data{
+        display: block;
+    }
+    .article__header{
+        display: flex;
+        justify-content: space-around   ;
+        align-items: center;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .article__title{
+        width: 61%;
+        margin: 20px 0 20px 0;
+        border-bottom: 0;
+        border-right: 1px solid #eeeeee;
+        padding-right: 20px;
+    }
+    .article__autor{
+        text-align: end;
+        color: rgba(56, 56, 56, 0.856);
+    }
+    .article__date{
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 1024px ){
